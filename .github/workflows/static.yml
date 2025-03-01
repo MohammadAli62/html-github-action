@@ -19,7 +19,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: self-hosted  # Adjust to match your EC2 runner on AWS ubuntuu
+    runs-on: self-hosted  # Adjust to match your EC2 runner on AWS ubuntuuu
     steps:
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
